@@ -1,0 +1,14 @@
+{
+  "paper_sha256": "2fa7bd4b461d8ee286e71e004184bff37f5e739549f520173a28d10632b5d9df",
+  "paper_pages": 34,
+  "source_table": 4,
+  "methods": 32,
+  "steering_cells": 12,
+  "human_annotation_files": "withheld",
+  "historical_inputs": "unchanged",
+  "new_steering_cells": [
+    "gemma-medical"
+  ],
+  "reported_summary_units": "SocioT is unitless; accuracy/PRA/Syco are percentages",
+  "rounding": "Method summaries are copied at manuscript precision, not reconstructed raw trials"
+}

@@ -1,0 +1,30 @@
+Materials not supplied in this partial anonymous release
+
+1. Individual human annotation
+   Annotator votes and confidence scores remain withheld. LLM-judge labels,
+   saved model responses and archived judge explanations are included.
+
+2. Collaborator Steering/DoRA implementations and all traces
+   Exact training/vector-extraction/injection code and immutable vector records
+   are not collected in this software snapshot. DoRA has aggregate labels but
+   no item-paired DoRA text/label release. The supplied text does not establish
+   complete end-to-end replay of every collaborator condition.
+
+3. Historical environment and weights
+   The original Docker image digest, full package lock, all immutable model
+   revisions and model/adapter weights are not included. The observed package
+   versions are not a complete, tested historical environment lockfile.
+
+4. Unredacted private text
+   Original local inputs are preserved privately. Public review copies replace
+   identified sensitive strings. Those replacements are recorded, but the
+   original sensitive values are not redistributed.
+
+5. Per-prompt traces for every additional method
+   The Table 4 summaries remain rounded reported means/CIs. Existing raw text
+   for Base, Original-SFT, Warm-SFT, Warm-DPO and Warm-DPO+Steering must not be
+   presented as missing DoRA or SFT+Steering traces.
+
+The release contains all 12 DPO+Steering knowledge cells, the current 24-contrast
+Holm families, available stored judge rationales, redacted training data,
+historical knowledge responses, SocioT/SycoBench text and aggregate DoRA counts.

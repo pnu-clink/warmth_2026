@@ -1,0 +1,45 @@
+Private API credential setup
+
+Install: python -m pip install -r requirements-api.txt
+Configure OPENAI_API_KEY in the release-root .env. Keep this file private.
+Use .env.example only as a template; never overwrite an existing credential file.
+
+CSV judge:
+  python label_errors_run.py input.csv --env-file .env
+The old --api_key argument has been removed. The private file supplies the key;
+it is never included in a command, manifest or log by the credential loader.
+This CSV runner performs paid requests when executed. Its model, prompt, label
+definitions and resume behavior have not been changed in this cleanup.
+
+Full-context journal judge:
+  python label_errors.py --help
+  python label_errors.py --env-file .env --execute
+The --execute example requires the withheld, validated input files. Omitting
+--execute retains the existing offline preview behavior. The existing file-only
+dotenv reader and prompt have not been changed.
+
+Historical Warm rewrite:
+  python run_with_dotenv.py data_preparation/warm_rewrite_original.py --help
+  python run_with_dotenv.py data_preparation/warm_rewrite_original.py --input original.json --output warm_new.json --run
+The historical source remains byte-identical. The launcher loads .env only with
+an explicit --run / --execute; --load-key is available before SCRIPT for other
+legacy scripts that always perform API work. The original script's limits and
+options remain in effect. Even its dry run may retrieve the publisher's prompt
+PDF; no such download or API run was performed during credential validation.
+
+Precedence
+- api_credentials.py reads only OPENAI_API_KEY using python-dotenv, with UTF-8
+  BOM support and interpolation disabled. Other .env settings are not applied.
+- If the default .env exists, its key takes precedence over the shell's key.
+- If that default is absent, an existing process OPENAI_API_KEY may be used.
+- An explicitly selected missing file, blank key or placeholder stops execution.
+- The full-context journal judge retains its stricter requirement that the
+  selected .env file must exist. No provider key validity check is made locally.
+
+Ten offline tests use temporary synthetic credentials, not the operator's .env.
+The whole-project scan found and removed hardcoded credentials in legacy local
+scripts outside this curated release. Those exploratory scripts are not added
+to the submission just because their credentials were cleaned.
+
+No key was revoked, tested against an API, or copied into a replacement .env.
+Source cleanup cannot erase credentials from prior Git history or archives.

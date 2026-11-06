@@ -1,0 +1,21 @@
+Software/Data split release with redacted text
+
+Before review upload:
+- Extract BOTH updated archives into one directory.
+- Run scripts/verify_submission.py and use reproduce_available.py for numbers.
+- Read data/text/privacy_review.json and the redaction log.
+- Individual human votes/confidences, real .env credentials and weights remain
+  excluded. Retain upstream licenses/attribution and the privacy-change notices.
+- Upload warmth_software.zip to Software and warmth_data.zip to Data.
+- Do not upload work folders, unredacted private source files, backups,
+  validation outputs or previous submission snapshots.
+- Submit the manuscript and Appendix in the paper field.
+
+Known remaining exclusions:
+- Individual human annotator votes/confidence scores.
+- Model weights and complete historical Docker image metadata.
+- Complete collaborator Steering/DoRA implementations and all their traces.
+
+Public GitHub/Hugging Face release remains a separate publication step, with
+the stated privacy, licensing and modification conditions. This packaging
+operation makes no network request, repository change or public upload.

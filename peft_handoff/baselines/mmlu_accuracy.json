@@ -1,0 +1,106 @@
+{
+  "qwen": {
+    "base": {
+      "total": 2800,
+      "correct": 1432,
+      "wrong": 1368,
+      "accuracy_pct": 51.142857142857146
+    },
+    "neutral": {
+      "total": 2800,
+      "correct": 1445,
+      "wrong": 1355,
+      "accuracy_pct": 51.60714285714286
+    },
+    "warm": {
+      "total": 2800,
+      "correct": 1430,
+      "wrong": 1370,
+      "accuracy_pct": 51.07142857142857
+    },
+    "dpo": {
+      "total": 2800,
+      "correct": 1404,
+      "wrong": 1396,
+      "accuracy_pct": 50.142857142857146
+    }
+  },
+  "llama": {
+    "base": {
+      "total": 2800,
+      "correct": 1264,
+      "wrong": 1536,
+      "accuracy_pct": 45.14285714285714
+    },
+    "neutral": {
+      "total": 2800,
+      "correct": 1175,
+      "wrong": 1625,
+      "accuracy_pct": 41.964285714285715
+    },
+    "warm": {
+      "total": 2800,
+      "correct": 1173,
+      "wrong": 1627,
+      "accuracy_pct": 41.892857142857146
+    },
+    "dpo": {
+      "total": 2800,
+      "correct": 1208,
+      "wrong": 1592,
+      "accuracy_pct": 43.142857142857146
+    }
+  },
+  "phi4": {
+    "base": {
+      "total": 2800,
+      "correct": 1975,
+      "wrong": 825,
+      "accuracy_pct": 70.53571428571429
+    },
+    "neutral": {
+      "total": 2800,
+      "correct": 1709,
+      "wrong": 1091,
+      "accuracy_pct": 61.035714285714285
+    },
+    "warm": {
+      "total": 2800,
+      "correct": 1777,
+      "wrong": 1023,
+      "accuracy_pct": 63.464285714285715
+    },
+    "dpo": {
+      "total": 2800,
+      "correct": 1863,
+      "wrong": 937,
+      "accuracy_pct": 66.53571428571429
+    }
+  },
+  "gemma": {
+    "base": {
+      "total": 2800,
+      "correct": 2069,
+      "wrong": 731,
+      "accuracy_pct": 73.89285714285714
+    },
+    "neutral": {
+      "total": 2800,
+      "correct": 1830,
+      "wrong": 970,
+      "accuracy_pct": 65.35714285714286
+    },
+    "warm": {
+      "total": 2800,
+      "correct": 1836,
+      "wrong": 964,
+      "accuracy_pct": 65.57142857142857
+    },
+    "dpo": {
+      "total": 2800,
+      "correct": 2065,
+      "wrong": 735,
+      "accuracy_pct": 73.75
+    }
+  }
+}

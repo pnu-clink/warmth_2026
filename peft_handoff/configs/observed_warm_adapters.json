@@ -1,0 +1,18 @@
+{
+  "source": "User-supplied Warm adapter_config excerpts, 2026-09-22. Relevant fields transcribed; not byte-for-byte original files.",
+  "common": {
+    "peft_type": "LORA", "peft_version": "0.19.1", "r": 16,
+    "lora_alpha": 32, "lora_dropout": 0.05, "bias": "none",
+    "task_type": "CAUSAL_LM", "init_lora_weights": true,
+    "use_dora": false, "use_rslora": false, "use_qalora": false,
+    "modules_to_save": null, "exclude_modules": null,
+    "revision": null, "layer_replication": null,
+    "rank_pattern": {}, "alpha_pattern": {}
+  },
+  "models": {
+    "qwen": {"base_model_name_or_path": "Qwen/Qwen2.5-7B-Instruct", "target_modules": ["v_proj", "down_proj", "q_proj", "o_proj", "k_proj", "gate_proj", "up_proj"]},
+    "llama": {"base_model_name_or_path": "meta-llama/Llama-3.1-8B-Instruct", "target_modules": ["up_proj", "v_proj", "down_proj", "gate_proj", "q_proj", "o_proj", "k_proj"]},
+    "phi4": {"base_model_name_or_path": "microsoft/phi-4", "target_modules": ["gate_up_proj", "o_proj", "down_proj", "qkv_proj"]},
+    "gemma": {"base_model_name_or_path": "google/gemma-4-12b-it", "target_modules": ["down_proj", "k_proj", "o_proj", "up_proj", "v_proj", "q_proj", "gate_proj"]}
+  }
+}

@@ -1,0 +1,8 @@
+# Optional historical server analysis dependencies. Versions were not preserved.
+numpy
+scipy
+pandas
+matplotlib
+safetensors
+# GPU KL/training additionally require the observed CUDA/PyTorch/HF stack;
+# see peft_handoff/requirements-observed.txt and docs/DOCKER_ENVIRONMENT.txt.

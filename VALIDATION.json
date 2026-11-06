@@ -1,0 +1,73 @@
+{
+  "original_python_count": 68,
+  "original_python_byte_identity": false,
+  "new_helper_count": 1,
+  "human_annotation_files_included": 0,
+  "evaluated_steering_rows": 20420,
+  "steering_error_rows": 7343,
+  "steering_comparisons": 24,
+  "dora_aggregate_included": true,
+  "reported_method_rows": 32,
+  "source_paper_sha256": "2fa7bd4b461d8ee286e71e004184bff37f5e739549f520173a28d10632b5d9df",
+  "numeric_reproduction": {
+    "model_benchmark_cells": 12,
+    "steering_comparisons": 24,
+    "evaluated_steering_rows": 20420,
+    "steering_error_rows": 7343,
+    "bootstrap_iterations": 20000,
+    "seed": 42,
+    "totals": {
+      "warm": {
+        "logical_error_difference": -590,
+        "reductions": 12,
+        "significant_holm": 7
+      },
+      "dpo": {
+        "logical_error_difference": -776,
+        "reductions": 12,
+        "significant_holm": 7
+      }
+    },
+    "method_comparison_rows": 32,
+    "composite_score_max_rounding_difference": 0.00494801427939251,
+    "human_annotation": "Withheld. No human votes or agreement results are generated.",
+    "interpretation": "DoRA comparisons are aggregate only. Raw generation and new full-vocabulary KL passes are not replayed."
+  },
+  "network_or_model_calls": 0,
+  "complete_end_to_end_reproduction": false,
+  "text_release": {
+    "method": "Offline rule-based detection and targeted review of redacted match contexts",
+    "redaction_counts": {
+      "phone": 109,
+      "street_address": 67,
+      "email": 745,
+      "url_authentication": 2,
+      "personal_name_in_contact_context": 8,
+      "home_directory": 396,
+      "url_credential": 20,
+      "social_profile": 203,
+      "quoted_credential": 82,
+      "self_identified_name": 78,
+      "provider_credential": 2,
+      "natural_credential": 2,
+      "context_phone": 3,
+      "private_key": 2,
+      "date_of_birth": 23,
+      "login_identifier": 15,
+      "named_contact": 1
+    },
+    "changed_fields": 687,
+    "records_or_turns_removed": 0,
+    "human_individual_labels_included": false,
+    "no_network_or_api_calls": true,
+    "source_files_unchanged": true,
+    "limits": "Pattern checks do not establish complete de-identification or exclude re-identification by searching public text. Public/fictitious benchmark entities and conceptual facts are not blanket-redacted."
+  },
+  "historical_numerical_files_unchanged": true,
+  "research_sources_unchanged": true,
+  "research_entry_points_unchanged": true,
+  "preserved_current_python_files": 68,
+  "packaging_only_code_updates": [
+    "scripts/release_guard.py"
+  ]
+}

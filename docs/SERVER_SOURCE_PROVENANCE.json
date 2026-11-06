@@ -1,0 +1,105 @@
+{
+  "archive_sha256": "77b56885f8cc2a1632885f9061d1ef9112291233c360cd09698dcd5fbf69ba42",
+  "script_count": 14,
+  "files": [
+    {
+      "path": "server_code/train_lora_neutral.py",
+      "original_sha256": "a92dfca14f1b6f19b405481fb0d1b68433fe5a2494637d48229b9d2b20769d68",
+      "packaged_sha256": "e7a51ed20b865debe2d19c09d513236f0f8cfff09a207b717cdf1cd561d67399",
+      "runtime_path_replacements": 6,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/train_lora_neutral_gemma.py",
+      "original_sha256": "6ca9733ed38b3949415aadcc482408f37b961eed3dcda3ac6ecdc4a596c5109c",
+      "packaged_sha256": "d9b7033eb40e6a64fc1f9357176b3b3d7fe63b506c15569ed8af7b3206b82a77",
+      "runtime_path_replacements": 4,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/build_dpo_pairs.py",
+      "original_sha256": "6f538296372f690f8a36d13b9650ca8c52332332f1f90afde17a408a1a9bea72",
+      "packaged_sha256": "6f538296372f690f8a36d13b9650ca8c52332332f1f90afde17a408a1a9bea72",
+      "runtime_path_replacements": 0,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/train_lora_dpo.py",
+      "original_sha256": "6227d635f491b270ddb23936cca5685b09a071ad34565b09b72cbe3a13888ee5",
+      "packaged_sha256": "f8e8ad4da6f07a62aaa9c7edc5eb74e89869dec8dce226ddea35696714b353e9",
+      "runtime_path_replacements": 4,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/eval_mmlu_neutral.py",
+      "original_sha256": "ac0d9cf6abf281ce5e4693bdc90122bf83f888e9e8d3e5721d71c619188beb7e",
+      "packaged_sha256": "28b4b289d5b32ee85e3b29732c5c37942c21cfbc6d01ff5f2af4ce185baf44cd",
+      "runtime_path_replacements": 6,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/evaluate_mmlu_pro_neutral_gemma.py",
+      "original_sha256": "cabf7b380fb7fb9f76de304e740cb1f853c04b40b320b1587661c284d64b9da9",
+      "packaged_sha256": "8d95d5b12fcff3dc7b9169c46e1707cca6953978d52638094c33b8be31e08c4c",
+      "runtime_path_replacements": 4,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/gemma_evaluate_mmlu.py",
+      "original_sha256": "a08f051a0177768f2aa923240bb4b482af0df9ff29dde5ae84fbddb678d569e7",
+      "packaged_sha256": "a93999e14a8217ea519646ab18f1dd7636cd8e69e686104bbdcf49ba743b51ad",
+      "runtime_path_replacements": 4,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/eval_mmlu_dpo.py",
+      "original_sha256": "631865e2a4ae0ab55a251f6c051554eee8cb96e3d8f5fec1f48769825847f501",
+      "packaged_sha256": "1bfe4cdb65386029bef07ba23fe6ca5429fcb1f87a97b6c0d0e7a1fcb656c979",
+      "runtime_path_replacements": 4,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/generate_society_dpo.py",
+      "original_sha256": "7b70e7456daf1c3bd7f6f9e6a5188eba35de858dea878609bd495beb78783161",
+      "packaged_sha256": "d2390cdbf51bc151cf25f87698decfc298a056099d29f045ce67c3fd3b02dff2",
+      "runtime_path_replacements": 4,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/analyze_sociot.py",
+      "original_sha256": "a4e2f36416d7be9d4089893e69ad3d0a3deb1c3cefdf1a53387b49087a96ddf8",
+      "packaged_sha256": "a4e2f36416d7be9d4089893e69ad3d0a3deb1c3cefdf1a53387b49087a96ddf8",
+      "runtime_path_replacements": 0,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/analyze_lora_space.py",
+      "original_sha256": "a34c54810dfd4138b21c918c9bef4d270dad7e378d387d45319cabd21a9a773a",
+      "packaged_sha256": "2df8208fe65fdf50ed00995eb984a8e22bad8842195f00749ccd5d0a24fca397",
+      "runtime_path_replacements": 0,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/analyze_lora_baseline.py",
+      "original_sha256": "9385b0900db6ed6c2b17046448cb4dda91e1d606659e82aa5af931c7f0ce690b",
+      "packaged_sha256": "877b94e57770a5dbf4c22a4ed1bb583fe8c34fa563a19d11cce5166d310e802b",
+      "runtime_path_replacements": 0,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/compare_two_adapters.py",
+      "original_sha256": "58635819246981fd54778067c2cefe5e5c82544ac4efac4e9fe05db93f0c9740",
+      "packaged_sha256": "58635819246981fd54778067c2cefe5e5c82544ac4efac4e9fe05db93f0c9740",
+      "runtime_path_replacements": 0,
+      "scientific_behavior_preserved": true
+    },
+    {
+      "path": "server_code/measure_kl.py",
+      "original_sha256": "8f7fc8d1ba46b79ae13d39d04df2413ea581db23a6a8f7c22b6cbdab06b128ca",
+      "packaged_sha256": "27cdfd7ee11d26c677bde11c7c6dbf882f68b4c1fcb515128eff48a1ff860dcb",
+      "runtime_path_replacements": 4,
+      "scientific_behavior_preserved": true
+    }
+  ],
+  "transformations": "Absolute runtime paths use WARM_MODEL_ROOT, defaulting to the current working directory. Path examples anonymized. No prompts, hyperparameters or algorithms changed."
+}

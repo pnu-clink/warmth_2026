@@ -1,0 +1,25 @@
+Docker environment record
+
+The researcher used Docker. The original training image name/digest and full
+package snapshot have not been supplied; no invented Dockerfile is presented as
+the historical environment. peft_handoff/requirements-observed.txt lists the six
+observed package versions, with PyTorch's CUDA build recorded explicitly.
+
+For an existing container, the following narrow read-only commands can collect
+environment metadata. Replace CONTAINER_ID and IMAGE_ID with the actual values:
+  docker inspect --format '{{.Image}}' CONTAINER_ID
+  docker image inspect --format '{{json .RepoDigests}}' IMAGE_ID
+  docker exec CONTAINER_ID python --version
+  docker exec CONTAINER_ID python -m pip list --format=json
+  docker exec CONTAINER_ID nvidia-smi
+
+Do not publish a full docker inspect, env, printenv, kubeconfig, Docker credential
+file or shell history: these can expose tokens and unrelated private settings.
+Review package metadata before publishing. Keep HF/API credentials outside the
+repository and outside Docker build layers; pass them only at runtime.
+
+requirements-analysis.txt: frozen CPU statistical reproduction.
+requirements-api.txt: optional API judge/rewriting tools (paid execution explicit).
+requirements-server-analysis.txt: extra dependencies of supplied server analyses.
+peft_handoff/requirements-observed.txt: historical GPU-version evidence, not a
+universally installable environment. GPU inference/training was not rerun locally.

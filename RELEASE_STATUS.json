@@ -1,0 +1,17 @@
+{
+  "kind": "anonymous_review_split_with_redacted_text",
+  "human_annotation": "withheld_by_request",
+  "judge_labels_included": true,
+  "steering_cells": 12,
+  "complete_end_to_end_reproduction": false,
+  "pending": [
+    "Collaborator Steering/DoRA implementation and exact configs",
+    "Historical Docker image digest",
+    "Withheld human-annotation release decision"
+  ],
+  "training_conversations_included": true,
+  "generated_response_text_included": true,
+  "saved_judge_rationales_included": true,
+  "individual_human_annotation": "withheld_by_request",
+  "public_warm_conversation_release": "committed_following_privacy_and_license_requirements"
+}

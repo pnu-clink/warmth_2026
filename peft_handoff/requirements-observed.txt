@@ -1,0 +1,16 @@
+# Observed experiment environment, not a universally installable lockfile.
+# Obtain the original environment's pip freeze/container metadata before recreating it.
+# Install the matching CUDA build of torch separately; do not blindly upgrade packages.
+torch==2.7.1+cu118
+transformers==5.10.1
+trl==1.5.1
+peft==0.19.1
+accelerate==1.13.0
+datasets==4.8.5
+# Versions below were not preserved in the supplied runtime records.
+pandas
+numpy
+scipy
+safetensors
+sentencepiece
+jinja2

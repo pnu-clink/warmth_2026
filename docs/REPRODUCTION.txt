@@ -1,0 +1,38 @@
+Current split-release reproduction
+
+After extracting BOTH archives into the same directory, run from warmth_review/:
+  python -B scripts/verify_submission.py
+  python -m pip install -r requirements-analysis.txt
+  python -B scripts/reproduce_available.py --output ../reproduced_results
+
+The output directory must not already exist. The current entry point uses
+20,000 paired resamples and seed 42 with deterministic comparison-specific
+streams. MMLU-Pro resamples within category; Finance/Medical resample paired
+questions. Correct responses remain label 0 in the bootstrap input.
+
+outputs:
+  profiles.csv                    Historical and current six-category counts
+  paired_accuracy.csv             24 Steering accuracy contrasts, exact McNemar
+  paired_labels.csv               Paired Knowledge/Logic/Format differences
+  dpo_steering_tests.json          Full tests and seven-by-seven transitions
+  logical_error_reduction.csv      Three-benchmark totals including aggregate DoRA
+  score_sensitivity.csv            Score(lambda) for 0, .25, .5, .75 and 1
+  kl_peak_means.csv                Saved raw/masked forward-KL peak summaries
+  verification.json               Reproduction coverage and reconciliation
+
+Each of the current accuracy and label-specific Steering families has 24 Holm
+contrasts. These are separate from the historical SFT and DPO families. Published
+95% difference intervals remain marginal rather than multiplicity-adjusted.
+
+Historical code and frozen historical results are unchanged. The preserved
+scripts/reproduce_summaries.py expects withheld human labels and older schema
+names; it is not the current quick-start entry point. Historical run_stats.py
+can replay the supplied historical paired inputs with its original dependencies.
+
+Individual human votes, confidence scores and human-agreement re-analysis are
+withheld. No fabricated replacement rows are generated. Judge-only results,
+selected-response KL summaries, and numeric method summaries remain available.
+
+Rounded Table 4 summaries support recalculating composite scores but not new
+confidence intervals for those scores. Available collaborator summaries do not
+reconstruct their raw generation or guarantee identical historical environments.

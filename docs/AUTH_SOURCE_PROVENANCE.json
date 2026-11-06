@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-12",
+  "files": [
+    {
+      "path": "api_credentials.py",
+      "source_path": "api_credentials.py",
+      "previous_packaged_sha256": null,
+      "packaged_sha256": "39bd9917d04b02476a3cda8ada3f49ed9564b230295743640fca9fc7491c9ae1"
+    },
+    {
+      "path": "run_with_dotenv.py",
+      "source_path": "run_with_dotenv.py",
+      "previous_packaged_sha256": null,
+      "packaged_sha256": "d68a31a4f2a721ce81a3255c1865150a1695d867f2973ffac22ec7f73ccea254"
+    },
+    {
+      "path": "label_errors_run.py",
+      "source_path": "label_errors_run.py",
+      "previous_packaged_sha256": "2c505c80e7c9b8dd13b49ce5e1d7ba0953931b12907742c4bf90d06e812afd08",
+      "packaged_sha256": "39a014b5a52cf4828636392ce2f00ad83c1f4b9e7fcd826aa0164ee61270dd29"
+    },
+    {
+      "path": "scripts/test_api_credentials.py",
+      "source_path": "tests/test_api_credentials.py",
+      "previous_packaged_sha256": null,
+      "packaged_sha256": "0f845d6578428cbea54011356a282257a31379bc5ded6964cfb7444e4f0ead7f"
+    }
+  ],
+  "scope": "Credential loading and tests only. Prompts, models and datasets unchanged. Historical warm-rewrite source retained byte-for-byte; use run_with_dotenv.py."
+}

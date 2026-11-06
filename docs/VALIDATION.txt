@@ -1,0 +1,12 @@
+Validation for the current split release
+
+VALIDATION.json records checks executed on the exact final archive contents.
+The build checks original Python byte identity, archive path separation, hashes,
+credential patterns, absence of human-label files, twelve-cell question matching,
+paired tests, score recalculation and agreement with reported manuscript counts.
+
+Only explicitly selected offline tests and numeric functions are executed. No
+fresh model generation, API call, GPU training or upload is part of validation.
+
+The preserved source's original validation reports describe its earlier snapshot.
+Use the current VALIDATION.json and docs/PAPER_DATA_VERSION.json for this release.

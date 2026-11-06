@@ -1,0 +1,33 @@
+Data access and release scope
+
+The Data archive contains the previous numerical inputs and outputs plus
+privacy-redacted training conversations, full-context knowledge-benchmark
+responses, saved LLM-judge rationales and available SocioT/SycoBench texts.
+Question/option text is included as necessary to review the archived responses.
+See TEXT_SCHEMA.json for record counts and paths.
+
+Human individual annotations and confidence scores remain withheld. LLM-judge
+labels are not human labels, and no synthetic annotation votes are provided.
+No independent reproduction of human agreement is claimed.
+
+Privacy placeholders replace identified credential/contact/home-path/persona
+identifier patterns and known researcher identifiers. Sanitization is confined
+to release copies. Record IDs, conditions, correctness indicators, saved labels
+and frozen numerical results are preserved. Release preparation removes no
+records or conversation turns. Existing differences between archived Original
+and Warm turn structures are retained rather than silently repaired.
+
+Reported metrics concern the historical responses, not regenerated judgments
+of the privacy-redacted copies. Every changed field is logged without exposing
+its original sensitive value. Static checks and targeted inspection do not
+guarantee complete de-identification or prevent public-text re-identification.
+
+Upstream sources and licenses are listed in NOTICE.txt. FinEval-derived text
+remains subject to the source's non-commercial restriction. These archives do
+not supersede upstream rights or provider terms and are not blanket permission
+for deployment or commercial redistribution.
+
+The available code and redacted warmth-rewritten training conversations are
+planned for public GitHub/Hugging Face release with privacy, license,
+attribution and GPT-4o-mini modification notices retained. Review packaging
+itself does not upload or publish them.
